@@ -2,8 +2,8 @@ import React from 'react';
 
 
 class App extends React.Component {
-  constructor(){
-    super
+  // constructor(){
+  //   super
   }
   // you will need a place to store your state in this component.
   // design `App` to be the parent component of your application.
