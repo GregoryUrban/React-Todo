@@ -75,7 +75,7 @@ button {
 }
     
     
-.todoList {
+.taskName {
     background: green;
     cursor: pointer;
     position: relative;

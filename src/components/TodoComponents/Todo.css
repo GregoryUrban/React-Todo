@@ -1,13 +1,31 @@
 .completer {
     text-decoration: line-through;
     background: lightgray;
+    color: black;
 }
 
-.div {
-    cursor: pointer;
+.incomplete {
+    /* cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
-    background: #eee;
+    background: black;
     font-size: 18px;
     transition: 0.2s;
+    color: white;
+    border-radius: 10px; */
+
+    background-color: #79bbff;
+    border-radius: 6px;
+    border: 1px solid #84bbf3;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528ecc;
+    margin: 2px
+
 }

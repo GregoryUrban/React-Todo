@@ -5,7 +5,7 @@ import Todo from './Todo'
 
 const TodoList = props => {
     return (
-        <div>
+        <div className='incomplete'>
             {props.todoList.map((task, index) => {
                 return (
                     <Todo 
