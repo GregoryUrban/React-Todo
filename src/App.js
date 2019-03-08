@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
+import '././App.css';
 
 // you will need a place to store your state in this component.
 // design `App` to be the parent component of your application.
@@ -8,7 +9,7 @@ import TodoForm from './components/TodoComponents/TodoForm';
 
 
 const todoList = [
-  {taskName: 'Learn setState()', id: Date.now(), complete: false},
+  {taskName: 'Learn setState()', id: Date.now(), completer: false},
 ]
 
 
@@ -16,7 +17,7 @@ class App extends React.Component {
   constructor (props){
     super(props);
     this.state = {
-      todoList: todoList,
+      todoList,
       taskName: '',
     }
   }
@@ -31,7 +32,7 @@ class App extends React.Component {
     this.setState({
       todoList: [
         ...this.state.todoList,
-        { taskName: this.state.taskName, id: Date.now(), complete: false}
+        { taskName: this.state.taskName, id: Date.now(), completer: false}
       ],
       taskName:''
     });
@@ -47,7 +48,7 @@ class App extends React.Component {
         else {
           return {
             ...task,
-            complete: !task.complete
+            completer: !task.completer
           }
         }
       })
@@ -58,7 +59,7 @@ class App extends React.Component {
     event.preventDefault();
     this.setState({
       todoList: this.state.todoList.filter(
-        task => task.complete !== true
+        task => task.completer !== true
       )
     })
   }

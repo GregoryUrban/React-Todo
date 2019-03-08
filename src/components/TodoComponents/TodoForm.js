@@ -10,7 +10,7 @@ console.log('Forms!');
                 type = 'text'
                 name = 'taskName'
                 onChange = {props.handleChanges}
-                placeholder = '...todo'
+                placeholder = '...enter here'
             />
             <button type = 'submit'>Add Todo</button>
             <button onClick={props.clear}>Clear Completed</button>
